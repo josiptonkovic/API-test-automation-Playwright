@@ -1,0 +1,49 @@
+[
+
+{
+    "id": 155,
+    "category": {
+      "id": 5,
+      "name": "English Stafford"
+    },
+    "name": "Loki",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 1,
+        "name": "cute"
+      },
+      {
+        "id": 2,
+        "name": "young"
+      }
+    ],
+    "status": "available"
+},
+
+{
+    "id": 156,
+    "category": {
+      "id": 7,
+      "name": "German Shepherd"
+    },
+    "name": "Luna",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 5,
+        "name": "young"
+      },
+      {
+        "id": 8,
+        "name": "cute"
+      }
+    ],
+    "status": "unavailable"
+}
+
+]
