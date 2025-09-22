@@ -1,6 +1,6 @@
 import { test, expect, APIResponse } from '@playwright/test';
 import pets from '../../../test-data/pets.json'
-import { getPet } from '../helpers/api-requests';
+import { createPet } from '../helpers/api-requests';
 
 test.describe('Test Endpoint POST /pet', () => {
 
@@ -10,7 +10,7 @@ test.describe('Test Endpoint POST /pet', () => {
 
 
   test.beforeAll(async ({ request }) => {
-    response = await getPet(request, testPet.id);
+    response = await createPet(request, testPet.id);
     body = await response.json();
   });
 
