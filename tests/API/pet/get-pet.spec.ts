@@ -1,17 +1,16 @@
 import { test, expect, APIResponse } from '@playwright/test';
+import pets from '../../../test-data/pets.json';
+import { createPet, getPet } from '../helpers/api-requests';
 
 test.describe('Test Endpoint GET /pet/{PetID}', () => {
 
   let response: APIResponse;
   let body: any;
+  const testPet = pets[0];
 
   test.beforeAll(async ({ request }) => {
-    response = await request.get('https://petstore.swagger.io/v2/pet/1', {
-      headers: {
-        'Accept': 'application/json',
-        'api_key': 'testApiKey',
-      },
-    });
+    await createPet(request, testPet);
+    response = await getPet(request, testPet.id);
     body = await response.json();
   });
 
