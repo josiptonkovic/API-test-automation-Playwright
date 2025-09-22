@@ -8,7 +8,7 @@
     },
     "name": "Loki",
     "photoUrls": [
-      "string"
+      "https://www.petsonme.com.au/wp-content/uploads/2023/08/image-3.jpeg"
     ],
     "tags": [
       {
@@ -24,14 +24,15 @@
 },
 
 {
-    "id": 156,
+    "id": 155,
     "category": {
       "id": 7,
       "name": "German Shepherd"
     },
     "name": "Luna",
     "photoUrls": [
-      "string"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg/250px-German_Shepherd_-_DSC_0346_%2810096362833%29.jpg",
+      "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"
     ],
     "tags": [
       {
