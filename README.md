@@ -18,3 +18,14 @@ To run the test, use the following commands in the Project terminal
 
 ```bash
 npx playwright test
+```
+
+To run a single test use:
+```bash
+npx playwright test pet/put-pet.spec.ts
+```
+
+And to run the Tests in UI mode use:
+```bash
+npx playwright test --ui
+```
