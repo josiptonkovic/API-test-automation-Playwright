@@ -2,10 +2,10 @@ import { APIRequestContext, APIResponse } from '@playwright/test';
 import { sendRequest } from './request-helper';
 import pets from '../../../test-data/pets.json';
 
-const baseUrl = 'https://petstore.swagger.io/v2/pet';
+const baseUrl = process.env.BASE_URL!;
 const defaultHeaders = {
   'Accept': 'application/json',
-  'api_key': '',
+  'api_key': process.env.API_KEY!,
 };
 const testPet = pets[0];
 const editedPet = pets[1];
